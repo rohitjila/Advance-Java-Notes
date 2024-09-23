@@ -1,0 +1,38 @@
+What is Collection Framework in java?
+A framework is basically a set of classes and interfaces which provid ready made architecture.
+
+Note: Iterable Interface is the main interface that is used by collection which actually provide iterator to iterate over the collections.
+Inherently all the classes and interfaces are implenting this iterable interface.
+
+There are 6 interfaces present in Collection Framework
+1. Collection Interface
+2. List Interface
+3. Set Interface
+4. Map Interface
+5. Queue Interface
+6. Dequeue Interface
+
+: Collection Interface -> Collection framework which contains all the basics collections like adding the data, removing the data, clearing the data.
+
+: List Interface -> List interface is very basically child interface of Collection interface. It deals with the data like list where we store the odrederd collection of objects. It deals with position, index e.tc. and it also deals with arrays and lists type of ArrayList, LinkedList , Vector and Stack.
+
+1. ArrayList -> ArrayList are Dynamic in nature. The size of the ArrayList automatically increase or shrink if we will remove the objects from the collection.
+
+Let's do questions to understand the functionality or implementation of ArrayList.
+1. Add an element in ArrayList.
+
+public class AddInArrayList {
+
+    public List<Integer> addInList() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the numbers of elements you want to add: ");
+        int n = sc.nextInt();
+        ArrayList<Integer> arrayList = new ArrayList<>(n);
+        for(int i=0; i<n; i++){
+            System.out.println("Enter an Integer : ");
+            int num = sc.nextInt();
+            arrayList.add(num);
+        }
+        return arrayList;
+    }
+}
